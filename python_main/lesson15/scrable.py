@@ -51,14 +51,13 @@ def get_word_with_letter(random_letter):
 def calculate_score(word):
     all_scores = []
     for letter in word:
-        score = LETTER_SCORES.get(letter.upper(), 0)
-        all_scores.append(score)
+        all_scores.append(LETTER_SCORES.get(letter, 0))
     return sum(all_scores)
 
 
 def main():
     random_letter = get_random_letter()
-    print('Начальная буква:', random_letter)
+    print(f'Начальная буква: {random_letter}')
 
     print('Игрок 1')
     first_player_word = get_word_with_letter(random_letter)
@@ -73,12 +72,10 @@ def main():
 
     if first_player_score > second_player_score:
         print('Игрок 1 победил!')
-
-    elif first_player_score == second_player_score:
-        print('Ничья!')
-
+    if first_player_score < second_player_score:
+        print('Игрок 2 победил!')
     else:
-        print('Игрок2 победил!')
+        print('Ничья!')
 
 
 if __name__ == '__main__':
