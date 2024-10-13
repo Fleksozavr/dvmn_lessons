@@ -50,3 +50,18 @@ body {
 .active {
     background-color: lightgreen;
 }
+
+.prize__button {
+    height: 42px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 19px;
+    background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
+}
+
+.prize__button:hover {
+     background-position: right center;
+}
