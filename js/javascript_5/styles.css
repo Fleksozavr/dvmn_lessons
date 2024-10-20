@@ -1,0 +1,33 @@
+body{
+    background-color: whitesmoke;
+    width: min-content;
+}
+
+.container {
+    display: flex;
+}
+
+
+.white_color{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 250px;
+    height: 50px;
+}
+
+.black_color{
+    width: 250px;
+    height: 50px;
+}
+
+.image {
+    width: 20px;
+    height: auto;
+}
+
+.buttons{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
